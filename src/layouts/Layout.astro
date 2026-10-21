@@ -1,0 +1,98 @@
+---
+interface Props {
+	title: string;
+	description: string;
+}
+
+const { title, description } = Astro.props;
+---
+
+<!doctype html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>{title}</title>
+		<meta name="description" content={description} />
+		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+		<link rel="sitemap" href="/sitemap-index.xml" />
+        
+        <!-- Google Fonts: Clean, professional sans-serif -->
+        <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+        <!-- Phase 4 GEO: JSON-LD Schema Markup -->
+        <script type="application/ld+json">
+        {
+          "@context": "https://schema.org",
+          "@graph": [
+            {
+              "@type": ["MedicalBusiness", "ProfessionalService", "LocalBusiness"],
+              "@id": "https://www.odysseyinsightscounseling.com/#practice",
+              "name": "Odyssey Insights Counseling LLC",
+              "url": "https://www.odysseyinsightscounseling.com/",
+              "telephone": "+1-320-322-8118",
+              "priceRange": "$150 - $180",
+              "currenciesAccepted": "USD",
+              "paymentAccepted": "Credit Card, Debit Card, HSA, FSA, Out-of-Network Superbill",
+              "description": "Private-pay couples therapy (Gottman Method, EFT) and trauma therapy (EMDR, CPT, TF-CBT) for adults, couples, veterans, and first responders in St. Cloud, MN and statewide via telehealth.",
+              "address": {
+                "@type": "PostalAddress",
+                "addressLocality": "St. Cloud",
+                "addressRegion": "MN",
+                "postalCode": "56301",
+                "addressCountry": "US"
+              },
+              "areaServed": [
+                { "@type": "City", "name": "St. Cloud", "containedInPlace": { "@type": "State", "name": "Minnesota" } },
+                { "@type": "City", "name": "Sartell" },
+                { "@type": "City", "name": "Waite Park" },
+                { "@type": "City", "name": "Sauk Rapids" },
+                { "@type": "State", "name": "Minnesota" }
+              ],
+              "openingHoursSpecification": [
+                {
+                  "@type": "OpeningHoursSpecification",
+                  "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"],
+                  "opens": "09:00",
+                  "closes": "20:00"
+                },
+                {
+                  "@type": "OpeningHoursSpecification",
+                  "dayOfWeek": "Saturday",
+                  "opens": "09:00",
+                  "closes": "16:00"
+                }
+              ],
+              "founder": { "@id": "https://www.odysseyinsightscounseling.com/#provider" },
+              "AvailableService": [
+                {
+                  "@type": "MedicalTherapy",
+                  "name": "Couples & Marriage Therapy (Gottman Method & EFT)",
+                  "offers": { "@type": "Offer", "price": "180.00", "priceCurrency": "USD" }
+                },
+                {
+                  "@type": "MedicalTherapy",
+                  "name": "Individual Trauma & PTSD Therapy (EMDR, CPT, TF-CBT)",
+                  "offers": { "@type": "Offer", "price": "150.00", "priceCurrency": "USD" }
+                }
+              ]
+            },
+            {
+              "@type": "Person",
+              "@id": "https://www.odysseyinsightscounseling.com/#provider",
+              "name": "Brian Oduguwa",
+              "honorificSuffix": "MSW, LICSW",
+              "jobTitle": "Licensed Independent Clinical Social Worker & Founder",
+              "worksFor": { "@id": "https://www.odysseyinsightscounseling.com/#practice" },
+              "sameAs": [
+                "https://www.psychologytoday.com/us/therapists/brian-oduguwa-plymouth-mn/1121399"
+              ]
+            }
+          ]
+        }
+        </script>
+	</head>
+	<body class="font-inter text-slate-800 bg-slate-50 flex flex-col min-h-screen">
+		<slot />
+	</body>
+</html>
