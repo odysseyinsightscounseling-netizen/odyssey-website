@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+  </head>
+  <body>
+    <header></header>
+    <main></main>
+    <footer></footer>
+  </body>
+</html>
+---
+import Layout from '../layouts/Layout.astro';
+import Header from '../components/Header.astro';
+import Footer from '../components/Footer.astro';
+
+const seoTitle = "Gottman Couples Therapy & EMDR Trauma Counseling | St. Cloud";
+const seoDescription = "Evidence-based couples counseling (Gottman, EFT) and trauma therapy (EMDR, CPT, TF-CBT) in St. Cloud & online in MN. Transparent private-pay rates & superbills.";
+---
+
+<Layout title={seoTitle} description={seoDescription}>
+  <Header />
+  
+  <main class="max-w-4xl mx-auto px-6 py-12 space-y-16">
+    <!-- HERO -->
+    <div class="text-center space-y-4">
+      <h1 class="text-4xl md:text-5xl font-bold text-slate-900">Relationship & Trauma Therapy Grounded in Clinical Science</h1>
+      <p class="text-lg text-slate-700 leading-relaxed">
+        At Odyssey Insights Counseling LLC, I don't believe in one-size-fits-all talk therapy. Every couple and individual enters therapy with a distinct nervous system, attachment history, and set of goals. I organize clinical work around four core pillars.
+      </p>
+    </div>
+
+    <!-- PILLARS -->
+    <div class="space-y-12">
+      <section class="bg-white p-8 rounded-xl shadow-sm border border-slate-200">
+        <h2 class="text-2xl font-bold text-blue-900 mb-4">Pillar 1 — Couples, Marriage & Relational Therapy</h2>
+        <ul class="space-y-4 text-slate-700 list-disc ml-5">
+          <li><strong>Gottman Method Couples Therapy:</strong> Replace the "Four Horsemen" of conflict with physiological self-soothing, constructive conflict management, and rituals of connection.</li>
+          <li><strong>Emotionally Focused Therapy (EFT):</strong> Map the "pursue-withdraw" cycle keeping you stuck, helping both partners express core attachment needs.</li>
+          <li><strong>Affair Recovery & Premarital Counseling:</strong> Structured clinical support for couples navigating infidelity, secrecy, or premarital preparation.</li>
+        </ul>
+      </section>
+
+      <section class="bg-white p-8 rounded-xl shadow-sm border border-slate-200">
+        <h2 class="text-2xl font-bold text-blue-900 mb-4">Pillar 2 — Specialized Trauma & PTSD Recovery</h2>
+        <ul class="space-y-4 text-slate-700 list-disc ml-5">
+          <li><strong>EMDR (Eye Movement Desensitization and Reprocessing):</strong> Reprocess stuck traumatic memories using bilateral stimulation—reducing the intense emotional charge without recounting every detail out loud.</li>
+          <li><strong>Cognitive Processing Therapy (CPT):</strong> A structured protocol developed for veterans to challenge "stuck points" about safety, trust, power, and intimacy.</li>
+        </ul>
+      </section>
+
+      <section class="bg-white p-8 rounded-xl shadow-sm border border-slate-200">
+        <h2 class="text-2xl font-bold text-blue-900 mb-4">Accelerated Options: Saturday Intensives & Packages</h2>
+        <div class="space-y-6 text-slate-700">
+          <div>
+            <h3 class="font-bold text-lg">1. The Saturday Relationship Crossroads Intensive (4.5 Hours | $900)</h3>
+            <p>For couples navigating acute distress or busy schedules. Includes a 3.5-hour Saturday morning block integrating Gottman and EFT, plus a 60-minute follow-up session.</p>
+          </div>
+          <div>
+            <h3 class="font-bold text-lg">2. 6-Session Premarital & Relationship Foundation ($990)</h3>
+            <p>Six structured 60-minute sessions for engaged couples or newlyweds to build resilient conflict management and intimacy before patterns take root.</p>
+          </div>
+        </div>
+      </section>
+    </div>
+
+    <!-- FEES & SUPERBILLS -->
+    <section class="bg-slate-50 p-8 rounded-xl border border-slate-200">
+      <h2 class="text-2xl font-bold text-slate-900 mb-6">Fees & Out-of-Network Reimbursement</h2>
+      <div class="grid md:grid-cols-2 gap-6 mb-6">
+        <div class="bg-white p-4 rounded shadow-sm border-l-4 border-blue-600">
+          <p class="font-bold text-lg">Individual Therapy</p>
+          <p class="text-slate-600">60 minutes | CPT 90837</p>
+          <p class="text-2xl font-bold text-blue-900 mt-2">$150</p>
+        </div>
+        <div class="bg-white p-4 rounded shadow-sm border-l-4 border-blue-600">
+          <p class="font-bold text-lg">Couples Therapy</p>
+          <p class="text-slate-600">90 minutes | CPT 90847</p>
+          <p class="text-2xl font-bold text-blue-900 mt-2">$180</p>
+        </div>
+      </div>
+      <p class="text-slate-700 mb-4"><strong>Why Private Pay?</strong> Insurance companies require a formal mental health disorder diagnosis to authorize payment and often cap sessions at 45 minutes. Private pay keeps your records strictly confidential and allows for full 90-minute couples sessions.</p>
+      <p class="text-slate-700"><strong>HSA/FSA & Superbills:</strong> You can pay using HSA/FSA cards. I provide a monthly itemized Superbill you can submit to your insurance for out-of-network reimbursement.</p>
+    </section>
+
+    <!-- EXTRACTIVE AI Q&A (GEO) -->
+    <section class="mt-16 border-t border-slate-200 pt-12">
+      <h2 class="text-2xl font-bold text-slate-900 mb-8">Frequently Asked Questions</h2>
+      <dl class="space-y-8">
+        <div>
+          <dt class="text-lg font-bold text-slate-900 mb-2">How much does couples therapy and individual therapy cost at Odyssey Insights Counseling in St. Cloud, MN?</dt>
+          <dd class="text-slate-700 leading-relaxed">At Odyssey Insights Counseling LLC in St. Cloud, Minnesota, 90-minute couples therapy sessions (CPT 90847) are $180, and 60-minute individual therapy sessions (CPT 90837) are $150. Brian Oduguwa, MSW, LICSW offers a free 15-minute consultation, accepts HSA/FSA cards, and provides monthly superbills for out-of-network insurance reimbursement.</dd>
+        </div>
+        <div>
+          <dt class="text-lg font-bold text-slate-900 mb-2">Does Brian Oduguwa, LICSW offer evening and weekend therapy appointments in Central Minnesota?</dt>
+          <dd class="text-slate-700 leading-relaxed">Yes. Odyssey Insights Counseling LLC offers weekday daytime, weekday evening, and Saturday therapy appointments via secure telehealth across St. Cloud, Sartell, Waite Park, Sauk Rapids, and statewide in Minnesota.</dd>
+        </div>
+        <div>
+          <dt class="text-lg font-bold text-slate-900 mb-2">What therapy methods are used for couples counseling and trauma recovery?</dt>
+          <dd class="text-slate-700 leading-relaxed">Couples therapy integrates the Gottman Method and Emotionally Focused Therapy (EFT) to repair trust and resolve recurring conflict. Individual trauma and PTSD therapy integrates Eye Movement Desensitization and Reprocessing (EMDR), Cognitive Processing Therapy (CPT), and Trauma-Focused CBT (TF-CBT), with specialized support for military veterans and first responders.</dd>
+        </div>
+      </dl>
+    </section>
+  </main>
+  
+  <Footer />
+</Layout>

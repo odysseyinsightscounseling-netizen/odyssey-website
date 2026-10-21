@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+  </head>
+  <body>
+    <header></header>
+    <main></main>
+    <footer></footer>
+  </body>
+</html>
+---
+import Layout from '../layouts/Layout.astro';
+import Header from '../components/Header.astro';
+import Footer from '../components/Footer.astro';
+
+const seoTitle = "Privacy Policy & HIPAA Notice | Odyssey Insights Counseling";
+const seoDescription = "Website privacy policy and HIPAA / Minnesota Health Records Act Notice of Privacy Practices for Odyssey Insights Counseling LLC in St. Cloud, MN.";
+---
+
+<Layout title={seoTitle} description={seoDescription}>
+  <Header />
+  
+  <main class="max-w-3xl mx-auto px-6 py-12">
+    <article class="prose prose-slate max-w-none">
+      <h1>Website Privacy Policy & HIPAA Notice of Privacy Practices</h1>
+      <p><strong>Effective Date:</strong> October 19, 2026</p>
+      <p><strong>Clinician & Privacy Officer:</strong> Brian Oduguwa, MSW, LICSW (MN License #22350)</p>
+      
+      <!-- PASTE REMAINDER OF PRIVACY/HIPAA TEXT HERE USING <h2> and <p> tags -->
+      <h2>Part I — Website Visitor Privacy Policy</h2>
+      <p>When you browse www.odysseyinsightscounseling.com, you may do so anonymously...</p>
+    </article>
+  </main>
+  
+  <Footer />
+</Layout>

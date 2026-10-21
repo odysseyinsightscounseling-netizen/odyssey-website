@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+  </head>
+  <body>
+    <header></header>
+    <main></main>
+    <footer></footer>
+  </body>
+</html>
+---
+import Layout from '../layouts/Layout.astro';
+import Header from '../components/Header.astro';
+import Footer from '../components/Footer.astro';
+
+const seoTitle = "Schedule Couples or Trauma Therapy | St. Cloud & MN Online";
+const seoDescription = "Book a free 15-minute consultation or schedule a 90-minute couples ($180) or 60-minute individual ($150) session with Brian Oduguwa, LICSW. Evening & Sat.";
+---
+
+<Layout title={seoTitle} description={seoDescription}>
+  <Header />
+  
+  <main class="max-w-4xl mx-auto px-6 py-12 space-y-12">
+    <!-- HERO -->
+    <div class="text-center space-y-4">
+      <h1 class="text-4xl font-bold text-slate-900">Take the First Step—On a Schedule That Fits Your Life</h1>
+      <p class="text-lg text-slate-700">Weekday daytime, weekday evening, and Saturday appointments available for couples and adults in St. Cloud, Central Minnesota, and statewide via secure telehealth.</p>
+    </div>
+
+    <!-- EHR SCHEDULING WIDGET -->
+    <section class="bg-white p-6 rounded-xl shadow-lg border border-slate-200">
+      <h2 class="text-2xl font-bold text-center text-blue-900 mb-6">Select an Appointment Time</h2>
+      
+      <!-- EHR WIDGET PLACEHOLDER -->
+      <!-- Replace this div with the embed code provided by SimplePractice, Sessions Health, or Jane -->
+      <div class="w-full bg-slate-50 border-2 border-dashed border-slate-300 rounded p-12 text-center text-slate-500">
+        <p class="font-semibold mb-2">[Insert EHR Scheduling Widget iframe Here]</p>
+        <p class="text-sm">Or use a direct button: <a href="#" class="text-blue-600 underline">Book via Secure Client Portal</a></p>
+      </div>
+    </section>
+
+    <!-- POLICIES -->
+    <section class="space-y-6">
+      <h2 class="text-2xl font-bold text-slate-900">Scheduling Policies</h2>
+      <div class="bg-slate-50 p-6 rounded border border-slate-200">
+        <h3 class="font-bold text-slate-900">24-Hour Cancellation Policy</h3>
+        <p class="text-sm text-slate-700 mt-2">Your appointment time is reserved exclusively for you. Because evening, Saturday, and 90-minute blocks are in high demand, please provide at least 24 hours' advance notice if you need to cancel. Late cancellations are billed according to the practice agreement signed at intake.</p>
+      </div>
+      <div class="bg-slate-50 p-6 rounded border border-slate-200">
+        <h3 class="font-bold text-slate-900">Minnesota Telehealth Location Requirement</h3>
+        <p class="text-sm text-slate-700 mt-2">In accordance with Minnesota licensure regulations (Minn. Stat. § 62A.673), clients participating in video sessions must be physically located within the State of Minnesota at the time of the session, in a private, stationary space (not while driving).</p>
+      </div>
+    </section>
+  </main>
+  
+  <Footer />
+</Layout>

@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+  </head>
+  <body>
+    <header></header>
+    <main></main>
+    <footer></footer>
+  </body>
+</html>
+---
+import Layout from '../layouts/Layout.astro';
+import Header from '../components/Header.astro';
+import Footer from '../components/Footer.astro';
+
+const seoTitle = "Contact Odyssey Insights Counseling | St. Cloud, MN & Online";
+const seoDescription = "Contact Brian Oduguwa, MSW, LICSW at Odyssey Insights Counseling LLC in St. Cloud, MN. Call (320) 322-8118 or request a free 15-minute consultation today.";
+---
+
+<Layout title={seoTitle} description={seoDescription}>
+  <Header />
+  
+  <main class="max-w-4xl mx-auto px-6 py-12 space-y-12">
+    <!-- HERO -->
+    <div class="text-center space-y-4">
+      <h1 class="text-4xl font-bold text-slate-900">Get in Touch</h1>
+      <p class="text-lg text-slate-700">Have a question about couples therapy, EMDR, out-of-network superbills, or professional referrals in St. Cloud? Reach out below.</p>
+    </div>
+
+    <!-- CRISIS DISCLAIMER (RED ALERT) -->
+    <section class="border-l-4 border-red-600 bg-red-50 p-6 rounded-r-md">
+      <h2 class="text-xl font-bold text-red-900 mb-2">Crisis & Emergency Resources</h2>
+      <p class="text-red-800 text-sm mb-4"><strong>Please Note:</strong> Odyssey Insights Counseling LLC is an outpatient practice and does not provide 24-hour crisis services. Do not use this website form for emergencies.</p>
+      <ul class="text-sm text-red-800 space-y-2 list-disc ml-5">
+        <li><strong>Emergency:</strong> Call 911 or go to the nearest emergency department (e.g., St. Cloud Hospital Emergency Trauma Center).</li>
+        <li><strong>Suicide & Crisis Lifeline:</strong> Call or text 988 (Veterans press 1).</li>
+        <li><strong>Central MN 24/7 Crisis Line:</strong> Call (320) 253-5555.</li>
+      </ul>
+    </section>
+
+    <!-- CONTACT INFO & FORM -->
+    <div class="grid md:grid-cols-2 gap-12">
+      <!-- NAP Details -->
+      <div class="space-y-6">
+        <h2 class="text-2xl font-bold text-slate-900">Practice Details</h2>
+        <div class="text-slate-700 space-y-2">
+          <p><strong>Practice:</strong> Odyssey Insights Counseling LLC</p>
+          <p><strong>Clinician:</strong> Brian Oduguwa, MSW, LICSW</p>
+          <p><strong>Phone:</strong> <a href="tel:3203228118" class="text-blue-600 hover:underline">(320) 322-8118</a></p>
+          <p><strong>Service Area:</strong> St. Cloud, MN (56301) & Statewide via Telehealth.</p>
+        </div>
+        <div class="bg-slate-50 p-4 rounded border border-slate-200">
+          <p class="text-sm text-slate-600"><strong>For Physicians & Therapists:</strong> I welcome collaborative referrals from CentraCare, VA coordinators, and fellow therapists for adjunctive 90-minute Gottman couples therapy or EMDR trauma work. Please call to coordinate.</p>
+        </div>
+      </div>
+
+      <!-- HTML Form (Formspree or EHR Integration) -->
+      <div>
+        <h2 class="text-2xl font-bold text-slate-900 mb-6">Send an Inquiry</h2>
+        <!-- Replace ACTION_URL with your Formspree endpoint or EHR secure form link -->
+        <form action="YOUR_FORMSPREE_ENDPOINT_HERE" method="POST" class="space-y-4">
+          <div>
+            <label class="block text-sm font-medium text-slate-700 mb-1">Name</label>
+            <input type="text" name="name" required class="w-full px-4 py-2 border border-slate-300 rounded focus:ring-blue-500 focus:border-blue-500">
+          </div>
+          <div>
+            <label class="block text-sm font-medium text-slate-700 mb-1">Phone Number</label>
+            <input type="tel" name="phone" required class="w-full px-4 py-2 border border-slate-300 rounded focus:ring-blue-500 focus:border-blue-500">
+          </div>
+          <div>
+            <label class="block text-sm font-medium text-slate-700 mb-1">What are you inquiring about?</label>
+            <select name="inquiry_type" class="w-full px-4 py-2 border border-slate-300 rounded focus:ring-blue-500 focus:border-blue-500">
+              <option>Couples Therapy</option>
+              <option>Individual Trauma or EMDR</option>
+              <option>Veteran or First Responder Support</option>
+              <option>Professional Referral</option>
+            </select>
+          </div>
+          <p class="text-xs text-slate-500"><strong>HIPAA Notice:</strong> For your privacy, please do not include sensitive clinical details or medical history in this form. We will discuss those securely during your consultation.</p>
+          <button type="submit" class="w-full bg-blue-600 text-white font-bold py-3 rounded hover:bg-blue-700 transition">Request Consultation</button>
+        </form>
+      </div>
+    </div>
+  </main>
+  
+  <Footer />
+</Layout>

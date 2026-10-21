@@ -1,0 +1,75 @@
+---
+---
+
+<html lang="en">
+	<head>
+		<meta charset="utf-8" />
+		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+		<link rel="icon" href="/favicon.ico" />
+		<meta name="viewport" content="width=device-width" />
+		<meta name="generator" content={Astro.generator} />
+		<title>Astro</title>
+	</head>
+	<body>
+		<h1>Astro</h1>
+	</body>
+</html>
+---
+import Layout from '../layouts/Layout.astro';
+import Header from '../components/Header.astro';
+import Footer from '../components/Footer.astro';
+
+const seoTitle = "Couples & Trauma Therapy in St. Cloud, MN | Brian Oduguwa, LICSW";
+const seoDescription = "Gottman & EFT couples counseling and EMDR/CPT trauma therapy for adults, veterans & first responders in St. Cloud and online across MN. Evening & Sat hours.";
+---
+
+<Layout title={seoTitle} description={seoDescription}>
+  <Header />
+  
+  <main>
+    <!-- HERO SECTION -->
+    <section class="bg-slate-900 text-white py-20 px-6">
+      <div class="max-w-5xl mx-auto text-center space-y-6">
+        <h1 class="text-4xl md:text-6xl font-bold tracking-tight">Navigate Conflict. Deepen Connection. Heal What Hurts.</h1>
+        <p class="text-xl text-slate-300 max-w-3xl mx-auto">
+          Evidence-based couples therapy and specialized trauma recovery for adults, partners, veterans, and first responders in St. Cloud and via telehealth across Minnesota.
+        </p>
+        <p class="italic text-slate-400 text-sm">"The world is not beautiful; therefore, it is." — Kino no Tabi</p>
+        
+        <div class="bg-slate-800 p-8 rounded-lg shadow-lg text-left mt-8 text-slate-200">
+          <p>Relationships and life transitions rarely follow a straight line. At Odyssey Insights Counseling LLC, I help couples and individuals break out of painful, repetitive cycles using structured, research-backed methods—including Gottman Method Couples Therapy, Emotionally Focused Therapy (EFT), EMDR, and Cognitive Processing Therapy (CPT). Whether you are working to rebuild trust after a betrayal, bridge emotional distance in your marriage, or process past trauma that keeps showing up in your present life, you don't have to figure it out alone.</p>
+        </div>
+
+        <div class="flex flex-col sm:flex-row justify-center gap-4 mt-8">
+          <a href="/scheduling" class="bg-blue-600 hover:bg-blue-700 text-white font-semibold py-3 px-8 rounded transition">Book a Free 15-Minute Consultation</a>
+          <a href="/scheduling" class="bg-slate-700 hover:bg-slate-600 text-white font-semibold py-3 px-8 rounded transition">Schedule an Intake Appointment</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- TRUST BANNER -->
+    <div class="bg-slate-200 text-slate-800 text-sm font-semibold py-4 text-center px-4 shadow-inner">
+      Brian Oduguwa, MSW, LICSW (MN License #22350) | 13+ Years Clinical Experience | Evening & Saturday Appointments Available | Serving St. Cloud, Central MN & Statewide via Secure Telehealth
+    </div>
+
+    <!-- IS THIS WHERE YOU ARE RIGHT NOW? -->
+    <section class="py-20 px-6 max-w-4xl mx-auto">
+      <h2 class="text-3xl font-bold text-slate-900 mb-6">Is This Where You Are Right Now?</h2>
+      <p class="mb-6 text-lg">Most couples and individuals reach out when trying harder on their own stops working:</p>
+      <ul class="space-y-4 list-disc list-outside ml-6 text-slate-700">
+        <li><strong>In Your Relationship:</strong> Conversations quickly escalate into the same exhausting arguments—or shut down into cold silence.</li>
+        <li><strong>After Broken Trust:</strong> Infidelity, secrecy, or unspoken resentment has damaged your sense of emotional safety.</li>
+        <li><strong>Growing Apart:</strong> Emotional distance has replaced closeness, leaving you feeling more like roommates than partners.</li>
+        <li><strong>Out of Sync:</strong> You still care deeply about your partnership, but one partner feels more urgent about therapy than the other.</li>
+        <li><strong>Carrying Heavy History:</strong> Unresolved trauma, military service, first-responder stress, or chronic anxiety makes it hard to stay present with the people you love.</li>
+      </ul>
+      <p class="mt-8 text-xl font-semibold text-slate-800 italic border-l-4 border-blue-600 pl-4">
+        You are not broken. You are stuck in a protective pattern—and with the right clinical roadmap, patterns can change.
+      </p>
+    </section>
+    
+    <!-- Paste the remaining homepage sections (Active Therapy, Specialized Care, Bio Summary) here using similar HTML/Tailwind classes -->
+
+  </main>
+  <Footer />
+</Layout>

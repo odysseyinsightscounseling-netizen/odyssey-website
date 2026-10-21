@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+  </head>
+  <body>
+    <header></header>
+    <main></main>
+    <footer></footer>
+  </body>
+</html>
+---
+import Layout from '../layouts/Layout.astro';
+import Header from '../components/Header.astro';
+import Footer from '../components/Footer.astro';
+
+const seoTitle = "Meet Brian Oduguwa, MSW, LICSW | St. Cloud Couples & Trauma";
+const seoDescription = "Learn about Brian Oduguwa, MSW, LICSW (MN #22350)—veteran, SCSU alumnus, and St. Cloud couples (Gottman, EFT) & trauma (EMDR, CPT) therapist. 13+ yrs exp.";
+---
+
+<Layout title={seoTitle} description={seoDescription}>
+  <Header />
+  
+  <main class="max-w-4xl mx-auto px-6 py-12 space-y-12">
+    <!-- HERO -->
+    <div class="text-center space-y-4 pb-8 border-b border-slate-200">
+      <h1 class="text-4xl md:text-5xl font-bold text-slate-900">Relationship & Trauma Specialist—Not a Passive Generalist</h1>
+      <p class="text-xl text-slate-700 font-medium">Meet Brian Oduguwa, MSW, LICSW | Founder of Odyssey Insights Counseling LLC</p>
+    </div>
+
+    <!-- CLINICAL PHILOSOPHY -->
+    <section class="space-y-4 text-slate-700 text-lg leading-relaxed">
+      <h2 class="text-2xl font-bold text-slate-900">Why I Do This Work</h2>
+      <p>I believe the quality of our relationships—and the safety we feel inside our own nervous systems—determines the quality of our lives.</p>
+      <p>Over the past 13 years of clinical practice, I have sat with hundreds of couples and individuals who tried therapy before and walked away disappointed. Many couples tell me their previous therapist simply sat back and watched them argue for 50 minutes. Trauma survivors often say they grew tired of nodding through small talk while the real weight went untouched.</p>
+      <p>My approach is intentionally active, structured, and directive. I bring clear clinical structure, honest feedback, and practical tools to every session.</p>
+    </section>
+
+    <!-- LIVED EXPERIENCE -->
+    <section class="bg-slate-50 p-8 rounded-xl space-y-6">
+      <h2 class="text-2xl font-bold text-slate-900">Clinical Depth Meets Lived Experience</h2>
+      
+      <div>
+        <h3 class="font-bold text-lg text-blue-900">Military Veteran Supporting Veterans & First Responders</h3>
+        <p class="text-slate-700 mt-2">Prior to earning my Master of Social Work at St. Cloud State University, I served in the military. I understand firsthand the realities of operational tempo, chain-of-command pressures, and the invisible challenge of transitioning from high-alert duty back to family life. You don't have to waste your first three sessions explaining the culture of service.</p>
+      </div>
+
+      <div>
+        <h3 class="font-bold text-lg text-blue-900">Culturally Responsive Care in Central Minnesota</h3>
+        <p class="text-slate-700 mt-2">As a Black male clinician practicing in St. Cloud, I recognize how difficult it can be to find a therapist who understands the intersections of racial identity, masculinity, career pressure, and family responsibility. My practice provides an affirming, grounded environment where your identity is respected without explanation or tokenization.</p>
+      </div>
+    </section>
+
+    <!-- CREDENTIALS -->
+    <section class="space-y-4">
+      <h2 class="text-2xl font-bold text-slate-900">Credentials & Licensure</h2>
+      <ul class="list-disc ml-5 text-slate-700 space-y-2">
+        <li><strong>Clinical Licensure:</strong> Licensed Independent Clinical Social Worker (LICSW), Minnesota Board of Social Work, License #22350</li>
+        <li><strong>Supervisory Credential:</strong> Minnesota Board-Approved Clinical Supervisor</li>
+        <li><strong>Education:</strong> Master of Social Work (MSW), St. Cloud State University (2013)</li>
+      </ul>
+    </section>
+
+    <!-- MANDATORY MN BOARD DISCLOSURE -->
+    <section class="mt-12 bg-slate-100 p-8 rounded border-l-4 border-slate-800">
+      <h2 class="text-xl font-bold text-slate-900 mb-4">Mandatory Notice to Clients (Minn. Stat. § 148E.195, Subd. 1)</h2>
+      <p class="text-sm text-slate-700 mb-4">As a client or prospective client of a Licensed Independent Clinical Social Worker in the State of Minnesota, you have the right to:</p>
+      <ol class="list-decimal ml-5 text-sm text-slate-700 space-y-2 mb-4">
+        <li>Be informed of your social worker's license status, education, training, and experience;</li>
+        <li>Examine public data on your social worker maintained by the Minnesota Board of Social Work;</li>
+        <li>Report a complaint about your social worker's practice to the Board; and</li>
+        <li>Be informed of the Board's contact information.</li>
+      </ol>
+      <div class="text-sm text-slate-700 bg-white p-4 rounded border border-slate-200">
+        <strong>Minnesota Board of Social Work</strong><br/>
+        Mailing Address: 335 Randolph Avenue, Suite 245, Saint Paul, MN 55102-5502<br/>
+        Telephone: (612) 617-2100 | Toll-Free: (888) 234-1320<br/>
+        Email: social.work@state.mn.us | Website: https://mn.gov/boards/social-work/
+      </div>
+    </section>
+  </main>
+  
+  <Footer />
+</Layout>
