@@ -9,7 +9,7 @@ const seoDescription = "Contact Brian Oduguwa, MSW, LICSW at Odyssey Insights Co
 
 <Layout title={seoTitle} description={seoDescription}>
   <Header />
-  
+
   <main class="max-w-4xl mx-auto px-6 py-12 space-y-12">
     <!-- HERO -->
     <div class="text-center space-y-4">
@@ -44,11 +44,11 @@ const seoDescription = "Contact Brian Oduguwa, MSW, LICSW at Odyssey Insights Co
         </div>
       </div>
 
-      <!-- HTML Form (Formspree or EHR Integration) -->
+      <!-- HTML Form (Netlify Integrated) -->
       <div>
         <h2 class="text-2xl font-bold text-slate-900 mb-6">Send an Inquiry</h2>
-        <!-- Replace ACTION_URL with your Formspree endpoint or EHR secure form link -->
-        <form action="YOUR_FORMSPREE_ENDPOINT_HERE" method="POST" class="space-y-4">
+        <!-- Netlify Form Attributes Added Below -->
+        <form name="contact" method="POST" data-netlify="true" class="space-y-4">
           <div>
             <label class="block text-sm font-medium text-slate-700 mb-1">Name</label>
             <input type="text" name="name" required class="w-full px-4 py-2 border border-slate-300 rounded focus:ring-blue-500 focus:border-blue-500">
@@ -72,6 +72,6 @@ const seoDescription = "Contact Brian Oduguwa, MSW, LICSW at Odyssey Insights Co
       </div>
     </div>
   </main>
-  
+
   <Footer />
 </Layout>
